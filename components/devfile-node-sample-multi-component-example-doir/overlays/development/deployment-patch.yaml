@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-node-sample-multi-component-example-doir
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rorai-tenant/multi-component-example-1/devfile-node-sample-multi-component-example-doir@sha256:f60ef746a37cf993789c6205ce8c36592a7a37c91378b0bfdd73d45803c6e730
+        name: container-image
+        resources: {}
+status: {}
