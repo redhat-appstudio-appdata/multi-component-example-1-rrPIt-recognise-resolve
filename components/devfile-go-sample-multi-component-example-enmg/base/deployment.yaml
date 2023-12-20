@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-go-sample-multi-component-example-enmg
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads/rorai-tenant/multi-component-example-1/devfile-go-sample-multi-component-example-enmg@sha256:87997315d9a26b4316d2213c1b63f5ed82909f1611e43d335e40e3173e990f9b
         name: my-go
         ports:
         - containerPort: 8081
